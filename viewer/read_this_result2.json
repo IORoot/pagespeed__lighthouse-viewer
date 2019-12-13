@@ -3131,7 +3131,7 @@
     "performance": {
      "id": "performance",
      "title": "Performance",
-     "score": 0.83,
+     "score": 0.11,
      "auditRefs": [
       {
        "id": "first-contentful-paint",

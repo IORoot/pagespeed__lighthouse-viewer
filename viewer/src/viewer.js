@@ -2724,10 +2724,12 @@ class LighthouseReportViewer {
     const e = new URLSearchParams(location.search),
       t = e.get("gist"),
       n = e.get("psiurl");
-    if (!t && !n) return Promise.resolve();
+
+    if (!t && !n ) return Promise.resolve();
     this._toggleLoadingBlur(!0);
     let r = Promise.resolve();
 
+    
     return n
       ? (r = this._fetchFromPSI({
           url: n,
@@ -2804,20 +2806,30 @@ class LighthouseReportViewer {
      * ANDYP - Listen for Files
      */
     _listenForFiles() {
+        
         // Scope 'this' into async function.
         var _this = this;
+
+        // Get URL param '?file='
+        const e = new URLSearchParams(location.search),
+        file = e.get("file");
+
+        console.log(file);
+
         try {
             // Retrieve file 
-            this._readTextFile("read_this_result.json", doThisOnceFileIsRead);
+            this._readTextFile(file, doThisOnceFileIsRead);
 
             // Do this function once file has been read.
             function doThisOnceFileIsRead(response){
+
                 var jsondata = JSON.parse(response);
+
                 try {
                     // send JSON to report?
-                    _this._replaceReportHtml(jsondata);
+                    _this._replaceReportHtml(jsondata.lighthouseResult);
                 } catch {
-                    console.log('nope');
+                    console.log('cannot run report against jsondata.lighthouseResult');
                 }
             };
         } catch {
@@ -2916,8 +2928,6 @@ class LighthouseReportViewer {
     }
   }
 
-
-  // ANDYP - Insert load from here to read HTML params
   _onUrlInputChange(e) {
     if ((e.stopPropagation(), !e.target)) return;
     const t = e.target;
