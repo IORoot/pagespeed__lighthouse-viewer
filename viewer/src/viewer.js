@@ -2814,10 +2814,8 @@ class LighthouseReportViewer {
         const e = new URLSearchParams(location.search),
         file = e.get("file");
 
-        console.log(file);
-
         try {
-            // Retrieve file 
+            // Retrieve specified file 
             this._readTextFile(file, doThisOnceFileIsRead);
 
             // Do this function once file has been read.

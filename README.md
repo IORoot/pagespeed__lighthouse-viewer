@@ -18,3 +18,15 @@ specify a file to read and opene the report automatically.
 That's what this custom version of the viewer does. This is a clone of the `gh-pages` branch of 
 the [lighthouse git repo](https://github.com/GoogleChrome/lighthouse/tree/gh-pages) with a little
 custom JS that allows you to specify a file to open through a URL parameter.
+
+## Installation
+
+Clone this repository into a webserver directory that you can access from Apache, NGINX, etc.. e.g. `/var/www/html/viewer`.
+You should be able to see the viewer at `http://mydomain.com/viewer/` or wherever you have placed the directory.
+
+`git clone https://github.com/IORoot/pagespeed-insights__lighthouse-viewer.git`
+
+## Usage
+
+1. Obtain a JSON result object from pagespeed insights API and write to a JSON file. e.g. `example_com.json` and put it somewhere in the web directory you installed the viewer. e.g. `/var/www/html/viewer/results`.
+1. Access the viewer with the URL parameter `http://mydomain.com/viewer?file=results/example_com.json` and it should load the file.
