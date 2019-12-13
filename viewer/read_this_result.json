@@ -1,0 +1,4005 @@
+{
+  "requestedUrl": "https://londonparkour.com/contact",
+  "finalUrl": "https://londonparkour.com/contact/",
+  "lighthouseVersion": "5.6.0",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3865.99 Safari/537.36",
+  "fetchTime": "2019-12-13T04:00:31.264Z",
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3694.0 Safari/537.36 Chrome-Lighthouse",
+    "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/77.0.3865.99 Safari/537.36",
+    "benchmarkIndex": 694.0
+  },
+  "runWarnings": [
+    
+  ],
+  "configSettings": {
+    "emulatedFormFactor": "desktop",
+    "locale": "en-US",
+    "onlyCategories": [
+      "performance",
+      "accessibility",
+      "best-practices",
+      "seo"
+    ]
+  },
+  "audits": {
+    "third-party-summary": {
+      "id": "third-party-summary",
+      "title": "Minimize third-party usage",
+      "description": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "displayValue": "Third-party code blocked the main thread for 0 ms",
+      "details": {
+        "headings": [
+          {
+            "key": "entity",
+            "itemType": "link",
+            "text": "Third-Party"
+          },
+          {
+            "itemType": "bytes",
+            "key": "transferSize",
+            "text": "Size",
+            "granularity": 1.0
+          },
+          {
+            "key": "blockingTime",
+            "itemType": "ms",
+            "text": "Main-Thread Blocking Time",
+            "granularity": 1.0
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "blockingTime": 0.0,
+            "entity": {
+              "url": "https://marketingplatform.google.com/about/tag-manager/",
+              "type": "link",
+              "text": "Google Tag Manager"
+            },
+            "mainThreadTime": 14.194999999999999,
+            "transferSize": 20882.0
+          },
+          {
+            "blockingTime": 0.0,
+            "entity": {
+              "url": "https://www.google.com/analytics/analytics/",
+              "type": "link",
+              "text": "Google Analytics"
+            },
+            "mainThreadTime": 27.316999999999997,
+            "transferSize": 19119.0
+          },
+          {
+            "transferSize": 1457.0,
+            "blockingTime": 0.0,
+            "entity": {
+              "url": "https://developers.google.com/apis-explorer/#p/",
+              "text": "Other Google APIs/SDKs",
+              "type": "link"
+            },
+            "mainThreadTime": 0.0
+          },
+          {
+            "entity": {
+              "type": "link",
+              "text": "Google/Doubleclick Ads",
+              "url": "https://www.doubleclickbygoogle.com/"
+            },
+            "mainThreadTime": 0.0,
+            "transferSize": 752.0,
+            "blockingTime": 0.0
+          }
+        ],
+        "summary": {
+          "wastedMs": 0.0,
+          "wastedBytes": 42210.0
+        }
+      }
+    },
+    "list": {
+      "id": "list",
+      "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+      "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more](https://web.dev/list/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "definition-list": {
+      "id": "definition-list",
+      "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>` or `<template>` elements.",
+      "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn more](https://web.dev/definition-list/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "viewport": {
+      "id": "viewport",
+      "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+      "description": "Add a `<meta name=\"viewport\">` tag to optimize your app for mobile screens. [Learn more](https://web.dev/viewport).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "warnings": [
+        
+      ]
+    },
+    "canonical": {
+      "id": "canonical",
+      "title": "Document has a valid `rel=canonical`",
+      "description": "Canonical links suggest which URL to show in search results. [Learn more](https://web.dev/canonical).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary"
+    },
+    "uses-rel-preconnect": {
+      "id": "uses-rel-preconnect",
+      "title": "Preconnect to required origins",
+      "description": "Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. [Learn more](https://web.dev/uses-rel-preconnect).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "warnings": [
+        
+      ],
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          
+        ],
+        "type": "opportunity",
+        "items": [
+          
+        ]
+      },
+      "numericValue": 0.0
+    },
+    "listitem": {
+      "id": "listitem",
+      "title": "List items (`<li>`) are contained within `<ul>` or `<ol>` parent elements",
+      "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>` or `<ol>` to be announced properly. [Learn more](https://web.dev/listitem/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [
+          
+        ],
+        "type": "table",
+        "headings": [
+          
+        ]
+      }
+    },
+    "network-server-latency": {
+      "id": "network-server-latency",
+      "title": "Server Backend Latencies",
+      "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "displayValue": "0 ms",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      },
+      "numericValue": 0.0
+    },
+    "object-alt": {
+      "id": "object-alt",
+      "title": "`<object>` elements have `[alt]` text",
+      "description": "Screen readers cannot translate non-text content. Adding alt text to `<object>` elements helps screen readers convey meaning to users. [Learn more](https://web.dev/object-alt/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "offscreen-images": {
+      "id": "offscreen-images",
+      "title": "Defer offscreen images",
+      "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn more](https://web.dev/offscreen-images).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "warnings": [
+        
+      ],
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          
+        ],
+        "type": "opportunity",
+        "items": [
+          
+        ],
+        "overallSavingsBytes": 0.0
+      },
+      "numericValue": 0.0
+    },
+    "uses-responsive-images": {
+      "id": "uses-responsive-images",
+      "title": "Properly size images",
+      "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn more](https://web.dev/uses-responsive-images).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "warnings": [
+        
+      ],
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "opportunity",
+        "overallSavingsBytes": 0.0
+      },
+      "numericValue": 0.0
+    },
+    "accesskeys": {
+      "id": "accesskeys",
+      "title": "`[accesskey]` values are unique",
+      "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more](https://web.dev/accesskeys/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "button-name": {
+      "id": "button-name",
+      "title": "Buttons have an accessible name",
+      "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn more](https://web.dev/button-name/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [
+          
+        ],
+        "type": "table",
+        "headings": [
+          
+        ]
+      }
+    },
+    "no-vulnerable-libraries": {
+      "id": "no-vulnerable-libraries",
+      "title": "Includes front-end JavaScript libraries with known security vulnerabilities",
+      "description": "Some third-party scripts may contain known security vulnerabilities that are easily identified and exploited by attackers. [Learn more](https://web.dev/no-vulnerable-libraries).",
+      "score": 0.0,
+      "scoreDisplayMode": "binary",
+      "displayValue": "3 vulnerabilities detected",
+      "details": {
+        "summary": {
+          
+        },
+        "headings": [
+          {
+            "text": "Library Version",
+            "key": "detectedLib",
+            "itemType": "link"
+          },
+          {
+            "key": "vulnCount",
+            "itemType": "text",
+            "text": "Vulnerability Count"
+          },
+          {
+            "text": "Highest Severity",
+            "key": "highestSeverity",
+            "itemType": "text"
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "detectedLib": {
+              "text": "jQuery@1.12.4",
+              "type": "link",
+              "url": "https://snyk.io/vuln/npm:jquery?lh=1.12.4&utm_source=lighthouse&utm_medium=ref&utm_campaign=audit"
+            },
+            "highestSeverity": "Medium",
+            "vulnCount": 2.0
+          },
+          {
+            "detectedLib": {
+              "text": "jQuery UI@1.11.4",
+              "type": "link",
+              "url": "https://snyk.io/vuln/npm:jquery-ui?lh=1.11.4&utm_source=lighthouse&utm_medium=ref&utm_campaign=audit"
+            },
+            "highestSeverity": "High",
+            "vulnCount": 1.0
+          }
+        ]
+      }
+    },
+    "http-status-code": {
+      "id": "http-status-code",
+      "title": "Page has successful HTTP status code",
+      "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more](https://web.dev/http-status-code).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary"
+    },
+    "js-libraries": {
+      "id": "js-libraries",
+      "title": "Detected JavaScript libraries",
+      "description": "All front-end JavaScript libraries detected on the page. [Learn more](https://web.dev/js-libraries).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [
+          {
+            "name": "jQuery",
+            "npm": "jquery",
+            "version": "1.12.4"
+          },
+          {
+            "name": "jQuery (Fast path)",
+            "npm": "jquery"
+          },
+          {
+            "version": "1.11.4",
+            "name": "jQuery UI",
+            "npm": "jquery-ui"
+          },
+          {
+            "name": "WordPress"
+          }
+        ],
+        "type": "table",
+        "summary": {
+          
+        },
+        "headings": [
+          {
+            "itemType": "text",
+            "key": "name",
+            "text": "Name"
+          },
+          {
+            "itemType": "text",
+            "key": "version",
+            "text": "Version"
+          }
+        ]
+      }
+    },
+    "th-has-data-cells": {
+      "id": "th-has-data-cells",
+      "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+      "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more](https://web.dev/th-has-data-cells/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "uses-rel-preload": {
+      "id": "uses-rel-preload",
+      "title": "Preload key requests",
+      "description": "Consider using `<link rel=preload>` to prioritize fetching resources that are currently requested later in page load. [Learn more](https://web.dev/uses-rel-preload).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          
+        ],
+        "type": "opportunity",
+        "items": [
+          
+        ]
+      },
+      "numericValue": 0.0
+    },
+    "performance-budget": {
+      "id": "performance-budget",
+      "title": "Performance budget",
+      "description": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-valid-attr": {
+      "id": "aria-valid-attr",
+      "title": "`[aria-*]` attributes are valid and not misspelled",
+      "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more](https://web.dev/aria-valid-attr/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "first-meaningful-paint": {
+      "id": "first-meaningful-paint",
+      "title": "First Meaningful Paint",
+      "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more](https://web.dev/first-meaningful-paint).",
+      "score": 0.82,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "1.1 s",
+      "numericValue": 1095.0
+    },
+    "resource-summary": {
+      "id": "resource-summary",
+      "title": "Keep request counts low and transfer sizes small",
+      "description": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "displayValue": "65 requests • 846 KB",
+      "details": {
+        "headings": [
+          {
+            "itemType": "text",
+            "key": "label",
+            "text": "Resource Type"
+          },
+          {
+            "key": "requestCount",
+            "itemType": "numeric",
+            "text": "Requests"
+          },
+          {
+            "key": "size",
+            "itemType": "bytes",
+            "text": "Transfer Size"
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "requestCount": 65.0,
+            "resourceType": "total",
+            "label": "Total",
+            "size": 866764.0
+          },
+          {
+            "resourceType": "image",
+            "label": "Image",
+            "size": 409801.0,
+            "requestCount": 18.0
+          },
+          {
+            "resourceType": "script",
+            "label": "Script",
+            "size": 222923.0,
+            "requestCount": 31.0
+          },
+          {
+            "label": "Stylesheet",
+            "size": 175900.0,
+            "requestCount": 10.0,
+            "resourceType": "stylesheet"
+          },
+          {
+            "label": "Font",
+            "size": 44731.0,
+            "requestCount": 1.0,
+            "resourceType": "font"
+          },
+          {
+            "requestCount": 1.0,
+            "resourceType": "document",
+            "label": "Document",
+            "size": 10566.0
+          },
+          {
+            "resourceType": "other",
+            "label": "Other",
+            "size": 2843.0,
+            "requestCount": 4.0
+          },
+          {
+            "resourceType": "media",
+            "label": "Media",
+            "size": 0.0,
+            "requestCount": 0.0
+          },
+          {
+            "label": "Third-party",
+            "size": 42210.0,
+            "requestCount": 18.0,
+            "resourceType": "third-party"
+          }
+        ]
+      }
+    },
+    "link-name": {
+      "id": "link-name",
+      "title": "Links do not have a discernible name",
+      "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn more](https://web.dev/link-name/).",
+      "score": 0.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "debugData": {
+          "type": "debugdata",
+          "impact": "serious",
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "wcag244",
+            "section508",
+            "section508.22.a"
+          ]
+        },
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "node": {
+              "nodeLabel": "a",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\"",
+              "type": "node",
+              "snippet": "<a href=\"https://londonparkour.com\" class=\"main-navigation__mobile-logo\"></a>",
+              "selector": ".main-navigation__mobile-logo",
+              "path": "1,HTML,1,BODY,2,DIV,1,HEADER,0,NAV,2,A"
+            }
+          }
+        ]
+      }
+    },
+    "final-screenshot": {
+      "id": "final-screenshot",
+      "title": "Final Screenshot",
+      "description": "The last screenshot captured of the pageload.",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "type": "screenshot",
+        "timing": 2551.0,
+        "timestamp": 1792269673012,
+        "data": "data:image/jpeg;base64,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"
+      }
+    },
+    "efficient-animated-content": {
+      "id": "efficient-animated-content",
+      "title": "Use video formats for animated content",
+      "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more](https://web.dev/efficient-animated-content)",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "opportunity",
+        "overallSavingsBytes": 0.0
+      },
+      "numericValue": 0.0
+    },
+    "network-requests": {
+      "id": "network-requests",
+      "title": "Network Requests",
+      "description": "Lists the network requests that were made during page load.",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "items": [
+          {
+            "statusCode": 301.0,
+            "url": "https://londonparkour.com/contact",
+            "mimeType": "text/html",
+            "endTime": 69.08900011330843,
+            "resourceSize": 0.0,
+            "startTime": 0.0,
+            "transferSize": 552.0
+          },
+          {
+            "transferSize": 10566.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/contact/",
+            "resourceType": "Document",
+            "mimeType": "text/html",
+            "resourceSize": 42389.0,
+            "endTime": 134.33700008317828,
+            "startTime": 69.6860000025481
+          },
+          {
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css",
+            "endTime": 934.3230000231415,
+            "resourceSize": 1205839.0,
+            "startTime": 143.95599998533726,
+            "transferSize": 141343.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/cache/minify/f95dc.default.include.184868.css"
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 316.73000007867813,
+            "resourceSize": 96873.0,
+            "startTime": 150.02600010484457,
+            "transferSize": 34229.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/jquery.js",
+            "statusCode": 200.0
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 388.0,
+            "endTime": 277.79099997133017,
+            "startTime": 150.26200003921986,
+            "transferSize": 764.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/google_tag_manager.js"
+          },
+          {
+            "endTime": 279.02400004677474,
+            "resourceSize": 17271.0,
+            "startTime": 150.4800000693649,
+            "transferSize": 7426.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/anime.3.1.0.min.js",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript"
+          },
+          {
+            "endTime": 347.14399999938905,
+            "resourceSize": 13917.0,
+            "startTime": 278.779000043869,
+            "transferSize": 2731.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/anime_fx.js",
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript"
+          },
+          {
+            "transferSize": 5032.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-global.css",
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css",
+            "endTime": 287.52600005827844,
+            "resourceSize": 19637.0,
+            "startTime": 151.26499999314547
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-input.css",
+            "statusCode": 200.0,
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css",
+            "resourceSize": 48035.0,
+            "endTime": 283.3480001427233,
+            "startTime": 151.4220000244677,
+            "transferSize": 8518.0
+          },
+          {
+            "resourceSize": 13145.0,
+            "endTime": 254.62000002153218,
+            "startTime": 151.573000010103,
+            "transferSize": 3230.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/pro/assets/css/acf-pro-input.css",
+            "statusCode": 200.0,
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css"
+          },
+          {
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min.css",
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css",
+            "resourceSize": 15196.0,
+            "endTime": 249.6790001168847,
+            "startTime": 151.95300010964274,
+            "transferSize": 2422.0
+          },
+          {
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css",
+            "resourceSize": 23474.0,
+            "endTime": 246.38999998569489,
+            "startTime": 152.12800004519522,
+            "transferSize": 4085.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min.css",
+            "statusCode": 200.0
+          },
+          {
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css",
+            "resourceSize": 1901.0,
+            "endTime": 270.6659999676049,
+            "startTime": 152.26800017990172,
+            "transferSize": 1002.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.css",
+            "statusCode": 200.0
+          },
+          {
+            "mimeType": "text/css",
+            "resourceSize": 2860.0,
+            "endTime": 283.8350001256913,
+            "startTime": 152.37300004810095,
+            "transferSize": 1300.0,
+            "url": "https://londonparkour.com/wp-admin/css/color-picker.min.css",
+            "statusCode": 200.0,
+            "resourceType": "Stylesheet"
+          },
+          {
+            "startTime": 152.49400003813207,
+            "transferSize": 6414.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/plugins/team-booking-extended/shortcodes/upcoming_extended/css/style.css",
+            "resourceType": "Stylesheet",
+            "mimeType": "text/css",
+            "resourceSize": 68833.0,
+            "endTime": 258.09100014157593
+          },
+          {
+            "mimeType": "text/css",
+            "endTime": 188.02900006994605,
+            "resourceSize": 15101.0,
+            "startTime": 152.60899998247623,
+            "transferSize": 2554.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/plugins/team-booking-extended/shortcodes/calendar_extended/css/style.css",
+            "resourceType": "Stylesheet"
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 4144.0,
+            "endTime": 308.5430001374334,
+            "startTime": 279.9720000475645,
+            "transferSize": 1915.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/plugins/stripe-payments/public/assets/js/stripe-handler-ng.js"
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/navigation_new.js",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 327.4430001620203,
+            "resourceSize": 3531.0,
+            "startTime": 309.71299996599555,
+            "transferSize": 1774.0
+          },
+          {
+            "transferSize": 702.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/progress_bar.js",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 357.63099999167025,
+            "resourceSize": 1158.0,
+            "startTime": 328.65200005471706
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 2999.0,
+            "endTime": 382.29200011119246,
+            "startTime": 348.3170000836253,
+            "transferSize": 1702.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/lazysizes_plugins/ls.bgset.min.js",
+            "statusCode": 200.0
+          },
+          {
+            "transferSize": 1231.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/lazysizes_plugins/ls.unveilhooks.min.js",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 1623.0,
+            "endTime": 490.5690001323819,
+            "startTime": 358.77500008791685
+          },
+          {
+            "mimeType": "application/x-javascript",
+            "endTime": 417.3230000305921,
+            "resourceSize": 7235.0,
+            "startTime": 383.40699998661876,
+            "transferSize": 3829.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/lazysizes.min.js",
+            "statusCode": 200.0,
+            "resourceType": "Script"
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 438.2929999846965,
+            "resourceSize": 3087.0,
+            "startTime": 418.5240000952035,
+            "transferSize": 1495.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/page_specific/contact_fx.js"
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 466.4100001100451,
+            "resourceSize": 3931.0,
+            "startTime": 439.45399997755885,
+            "transferSize": 2262.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/ui/core.min.js"
+          },
+          {
+            "endTime": 496.58400006592274,
+            "resourceSize": 6838.0,
+            "startTime": 467.45400014333427,
+            "transferSize": 3009.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/ui/widget.min.js",
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript"
+          },
+          {
+            "mimeType": "application/x-javascript",
+            "endTime": 519.2210001405329,
+            "resourceSize": 3142.0,
+            "startTime": 491.6850000154227,
+            "transferSize": 1440.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/ui/mouse.min.js",
+            "statusCode": 200.0,
+            "resourceType": "Script"
+          },
+          {
+            "url": "https://londonparkour.com/wp-includes/js/jquery/ui/sortable.min.js",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 24891.0,
+            "endTime": 528.1740000937134,
+            "startTime": 497.6210000459105,
+            "transferSize": 6902.0
+          },
+          {
+            "mimeType": "application/x-javascript",
+            "endTime": 540.7569999806583,
+            "resourceSize": 18403.0,
+            "startTime": 521.0029999725521,
+            "transferSize": 5670.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/ui/resizable.min.js",
+            "statusCode": 200.0,
+            "resourceType": "Script"
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 326.68100018054247,
+            "resourceSize": 119238.0,
+            "startTime": 153.7450000178069,
+            "transferSize": 32950.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-input.min.js",
+            "statusCode": 200.0
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 18447.0,
+            "endTime": 271.10600005835295,
+            "startTime": 153.92499999143183,
+            "transferSize": 4999.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/pro/assets/js/acf-pro-input.min.js"
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 75005.0,
+            "endTime": 596.4079999830574,
+            "startTime": 529.4460000004619,
+            "transferSize": 21657.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.full.min.js"
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 576.0300001129508,
+            "resourceSize": 36380.0,
+            "startTime": 542.0540000777692,
+            "transferSize": 11316.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/ui/datepicker.min.js",
+            "statusCode": 200.0
+          },
+          {
+            "transferSize": 11106.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.js",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 618.3960000053048,
+            "resourceSize": 41134.0,
+            "startTime": 578.1180001795292
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 18847.0,
+            "endTime": 622.9930000845343,
+            "startTime": 597.8350001387298,
+            "transferSize": 5404.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/ui/draggable.min.js",
+            "statusCode": 200.0
+          },
+          {
+            "endTime": 652.3880001623183,
+            "resourceSize": 10931.0,
+            "startTime": 619.5970000699162,
+            "transferSize": 3488.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/ui/slider.min.js",
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript"
+          },
+          {
+            "startTime": 623.9269999787211,
+            "transferSize": 1033.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/jquery.ui.touch-punch.js",
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 652.856000000611,
+            "resourceSize": 1179.0
+          },
+          {
+            "mimeType": "application/x-javascript",
+            "endTime": 689.9050001520663,
+            "resourceSize": 23608.0,
+            "startTime": 654.0570000652224,
+            "transferSize": 8510.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-admin/js/iris.min.js",
+            "resourceType": "Script"
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "endTime": 683.7959999684244,
+            "resourceSize": 3488.0,
+            "startTime": 654.3290000408888,
+            "transferSize": 1613.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-admin/js/color-picker.min.js"
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-forms-pro/assets/dist/js/forms.js",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 5694.0,
+            "endTime": 713.2640001364052,
+            "startTime": 684.9650000222027,
+            "transferSize": 2258.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/plugins/andyp_c_info/assets/vc_c-info.js",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 4506.0,
+            "endTime": 716.3400000426918,
+            "startTime": 690.906000090763,
+            "transferSize": 1199.0
+          },
+          {
+            "resourceType": "Script",
+            "mimeType": "application/x-javascript",
+            "resourceSize": 2402.0,
+            "endTime": 745.9840001538396,
+            "startTime": 714.5380000583827,
+            "transferSize": 1031.0,
+            "url": "https://londonparkour.com/wp-content/plugins/andyp_c_media/assets/vc_c-media.js",
+            "statusCode": 200.0
+          },
+          {
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='100%25' height='100%2",
+            "statusCode": 200.0,
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml",
+            "endTime": 1065.89199998416,
+            "resourceSize": 3293.0,
+            "startTime": 1065.8100000582635
+          },
+          {
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml",
+            "resourceSize": 252.0,
+            "endTime": 1067.9620001465082,
+            "startTime": 1067.9020001553,
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk'",
+            "statusCode": 200.0
+          },
+          {
+            "resourceType": "Image",
+            "mimeType": "image/png",
+            "endTime": 1119.0049999859184,
+            "resourceSize": 101460.0,
+            "startTime": 1069.3730001803488,
+            "transferSize": 101846.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/uploads/2019/08/Andy_parrallettes_1000x527.png"
+          },
+          {
+            "mimeType": "image/jpeg",
+            "endTime": 1125.977999996394,
+            "resourceSize": 134320.0,
+            "startTime": 1070.1630001422018,
+            "transferSize": 134707.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/uploads/2019/07/starfield_minipanel.jpg",
+            "resourceType": "Image"
+          },
+          {
+            "resourceType": "Image",
+            "mimeType": "image/jpeg",
+            "endTime": 1117.9680000059307,
+            "resourceSize": 99465.0,
+            "startTime": 1071.0450001060963,
+            "transferSize": 99851.0,
+            "url": "https://londonparkour.com/wp-content/uploads/2019/07/cool_building_minipanel.jpg",
+            "statusCode": 200.0
+          },
+          {
+            "resourceSize": 4777.0,
+            "endTime": 1094.594000140205,
+            "startTime": 1077.6770000811666,
+            "transferSize": 5160.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/images/spinner.gif",
+            "resourceType": "Image",
+            "mimeType": "image/gif"
+          },
+          {
+            "startTime": 1078.220000024885,
+            "transferSize": 67596.0,
+            "url": "https://londonparkour.com/wp-content/uploads/2019/09/feet_dangle_grad.jpg",
+            "statusCode": 200.0,
+            "resourceType": "Image",
+            "mimeType": "image/jpeg",
+            "endTime": 1118.5250000562519,
+            "resourceSize": 67210.0
+          },
+          {
+            "endTime": 1082.4659999925643,
+            "resourceSize": 1441.0,
+            "startTime": 1082.3960001580417,
+            "transferSize": 0.0,
+            "statusCode": 200.0,
+            "url": "data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fab' data-icon='cc-strip",
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "startTime": 1084.5890000928193,
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml,%3Csvg viewBox='0 0 360 98' version='1.1' xmlns='http://www.w3.org/2000/svg' xmln",
+            "statusCode": 200.0,
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml",
+            "endTime": 1084.7080000676215,
+            "resourceSize": 4285.0
+          },
+          {
+            "startTime": 1086.6219999734312,
+            "transferSize": 0.0,
+            "statusCode": 200.0,
+            "url": "data:image/svg+xml,%3Csvg viewBox='0 0 512 512' version='1.1' xmlns='http://www.w3.org/2000/svg' xml",
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml",
+            "endTime": 1086.6980000864714,
+            "resourceSize": 818.0
+          },
+          {
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml",
+            "endTime": 1088.8510001823306,
+            "resourceSize": 922.0,
+            "startTime": 1088.808000087738,
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2338EF7D' viewBox=",
+            "statusCode": 200.0
+          },
+          {
+            "startTime": 1090.5870001297444,
+            "transferSize": 0.0,
+            "statusCode": 200.0,
+            "url": "data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23757575' viewBox=",
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml",
+            "endTime": 1090.6410000752658,
+            "resourceSize": 1157.0
+          },
+          {
+            "mimeType": "application/font-woff2",
+            "endTime": 1137.061000103131,
+            "resourceSize": 44300.0,
+            "startTime": 1093.1750000454485,
+            "transferSize": 44731.0,
+            "statusCode": 200.0,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.woff2",
+            "resourceType": "Font"
+          },
+          {
+            "transferSize": 20882.0,
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-P5T257F",
+            "statusCode": 200.0,
+            "resourceType": "Script",
+            "mimeType": "application/javascript",
+            "endTime": 1242.5860001239926,
+            "resourceSize": 53519.0,
+            "startTime": 1234.2179999686778
+          },
+          {
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w",
+            "statusCode": 200.0,
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml",
+            "endTime": 1262.5890001654625,
+            "resourceSize": 8452.0,
+            "startTime": 1262.4620001297444
+          },
+          {
+            "endTime": 1266.7490001767874,
+            "resourceSize": 1157.0,
+            "startTime": 1266.6909999679774,
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23242424' viewBox=",
+            "statusCode": 200.0,
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml"
+          },
+          {
+            "mimeType": "image/svg+xml",
+            "endTime": 1269.239000044763,
+            "resourceSize": 922.0,
+            "startTime": 1269.1790000535548,
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23242424' viewBox=",
+            "statusCode": 200.0,
+            "resourceType": "Image"
+          },
+          {
+            "mimeType": "image/svg+xml",
+            "resourceSize": 565.0,
+            "endTime": 1271.796999964863,
+            "startTime": 1271.7330001760274,
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23242424' viewBox=",
+            "statusCode": 200.0,
+            "resourceType": "Image"
+          },
+          {
+            "resourceType": "Image",
+            "mimeType": "image/svg+xml",
+            "endTime": 1274.239000165835,
+            "resourceSize": 1017.0,
+            "startTime": 1274.1720001213253,
+            "transferSize": 0.0,
+            "url": "data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23242424' viewBox=",
+            "statusCode": 200.0
+          },
+          {
+            "statusCode": 200.0,
+            "url": "https://www.google-analytics.com/analytics.js",
+            "resourceType": "Script",
+            "mimeType": "text/javascript",
+            "endTime": 1519.3920000456274,
+            "resourceSize": 44470.0,
+            "startTime": 1511.7300001438707,
+            "transferSize": 18396.0
+          },
+          {
+            "startTime": 1560.0100001320243,
+            "transferSize": 723.0,
+            "url": "https://www.google-analytics.com/r/collect?v=1&_v=j79&a=2089651548&t=pageview&_s=1&dl=https%3A%2F%2Flondonparkour.com%2Fcontact%2F&ul=en-us&de=UTF-8&dt=Contact%20us.%20No%20bots%20or%20AI%2C%20just%20talk%20to%20real%20people.%20-%20London%20Parkour&sd=24-bit&sr=800x600&vp=1350x940&je=0&_u=YEBAAAAB~&jid=1056462523&gjid=504825017&cid=1171644409.1576209633&tid=UA-116670575-1&_gid=402004953.1576209633&_r=1&gtm=2wgc61P5T257F&z=151100869",
+            "statusCode": 302.0,
+            "mimeType": "text/html",
+            "endTime": 1567.0410001184791,
+            "resourceSize": 0.0
+          },
+          {
+            "mimeType": "text/html",
+            "endTime": 1573.9110000431538,
+            "resourceSize": 0.0,
+            "startTime": 1567.2049999702722,
+            "transferSize": 752.0,
+            "url": "https://stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-116670575-1&cid=1171644409.1576209633&jid=1056462523&_gid=402004953.1576209633&gjid=504825017&_v=j79&z=151100869",
+            "statusCode": 302.0
+          },
+          {
+            "url": "https://www.google.com/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-116670575-1&cid=1171644409.1576209633&jid=1056462523&_v=j79&z=151100869",
+            "statusCode": 302.0,
+            "mimeType": "text/html",
+            "endTime": 1589.7439999971539,
+            "resourceSize": 0.0,
+            "startTime": 1574.0229999646544,
+            "transferSize": 816.0
+          },
+          {
+            "startTime": 1589.8680000100285,
+            "transferSize": 641.0,
+            "statusCode": 200.0,
+            "url": "https://www.google.co.uk/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-116670575-1&cid=1171644409.1576209633&jid=1056462523&_v=j79&z=151100869&slf_rd=1&random=3086312604",
+            "resourceType": "Image",
+            "mimeType": "image/gif",
+            "endTime": 1600.546000059694,
+            "resourceSize": 42.0
+          }
+        ],
+        "type": "table",
+        "headings": [
+          {
+            "text": "URL",
+            "key": "url",
+            "itemType": "url"
+          },
+          {
+            "text": "Start Time",
+            "granularity": 1.0,
+            "key": "startTime",
+            "itemType": "ms"
+          },
+          {
+            "key": "endTime",
+            "itemType": "ms",
+            "text": "End Time",
+            "granularity": 1.0
+          },
+          {
+            "itemType": "bytes",
+            "key": "transferSize",
+            "text": "Transfer Size",
+            "displayUnit": "kb",
+            "granularity": 1.0
+          },
+          {
+            "key": "resourceSize",
+            "itemType": "bytes",
+            "text": "Resource Size",
+            "displayUnit": "kb",
+            "granularity": 1.0
+          },
+          {
+            "key": "statusCode",
+            "itemType": "text",
+            "text": "Status Code"
+          },
+          {
+            "key": "mimeType",
+            "itemType": "text",
+            "text": "MIME Type"
+          },
+          {
+            "key": "resourceType",
+            "itemType": "text",
+            "text": "Resource Type"
+          }
+        ]
+      },
+      "numericValue": 65.0
+    },
+    "td-headers-attr": {
+      "id": "td-headers-attr",
+      "title": "Cells in a `<table>` element that use the `[headers]` attribute refer to table cells within the same table.",
+      "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more](https://web.dev/td-headers-attr/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "meta-viewport": {
+      "id": "meta-viewport",
+      "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+      "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more](https://web.dev/meta-viewport/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "password-inputs-can-be-pasted-into": {
+      "id": "password-inputs-can-be-pasted-into",
+      "title": "Allows users to paste into password fields",
+      "description": "Preventing password pasting undermines good security policy. [Learn more](https://web.dev/password-inputs-can-be-pasted-into).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "label": {
+      "id": "label",
+      "title": "Form elements have associated labels",
+      "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more](https://web.dev/label/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [
+          
+        ],
+        "type": "table",
+        "headings": [
+          
+        ]
+      }
+    },
+    "meta-description": {
+      "id": "meta-description",
+      "title": "Document has a meta description",
+      "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more](https://web.dev/meta-description).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary"
+    },
+    "font-display": {
+      "id": "font-display",
+      "title": "All text remains visible during webfont loads",
+      "description": "Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. [Learn more](https://web.dev/font-display).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "warnings": [
+        
+      ],
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "estimated-input-latency": {
+      "id": "estimated-input-latency",
+      "title": "Estimated Input Latency",
+      "description": "Estimated Input Latency is an estimate of how long your app takes to respond to user input, in milliseconds, during the busiest 5s window of page load. If your latency is higher than 50 ms, users may perceive your app as laggy. [Learn more](https://web.dev/estimated-input-latency).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "10 ms",
+      "numericValue": 12.8
+    },
+    "html-has-lang": {
+      "id": "html-has-lang",
+      "title": "`<html>` element has a `[lang]` attribute",
+      "description": "If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more](https://web.dev/html-has-lang/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "items": [
+          
+        ],
+        "headings": [
+          
+        ]
+      }
+    },
+    "is-crawlable": {
+      "id": "is-crawlable",
+      "title": "Page isn’t blocked from indexing",
+      "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more](https://web.dev/is-crawable).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "table"
+      }
+    },
+    "focusable-controls": {
+      "id": "focusable-controls",
+      "title": "Interactive controls are keyboard focusable",
+      "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn more](https://web.dev/focusable-controls/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "font-size": {
+      "id": "font-size",
+      "title": "Document uses legible font sizes",
+      "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more](https://web.dev/font-size).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-allowed-attr": {
+      "id": "aria-allowed-attr",
+      "title": "`[aria-*]` attributes match their roles",
+      "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn more](https://web.dev/aria-allowed-attr/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "table"
+      }
+    },
+    "external-anchors-use-rel-noopener": {
+      "id": "external-anchors-use-rel-noopener",
+      "title": "Links to cross-origin destinations are safe",
+      "description": "Add `rel=\"noopener\"` or `rel=\"noreferrer\"` to any external links to improve performance and prevent security vulnerabilities. [Learn more](https://web.dev/external-anchors-use-rel-noopener).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "warnings": [
+        
+      ],
+      "details": {
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "table"
+      }
+    },
+    "uses-webp-images": {
+      "id": "uses-webp-images",
+      "title": "Serve images in next-gen formats",
+      "description": "Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more](https://web.dev/uses-webp-images).",
+      "score": 0.9,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "Potential savings of 182 KB",
+      "warnings": [
+        
+      ],
+      "details": {
+        "type": "opportunity",
+        "items": [
+          {
+            "isCrossOrigin": false,
+            "totalBytes": 134320.0,
+            "wastedBytes": 83848.0,
+            "fromProtocol": true,
+            "url": "https://londonparkour.com/wp-content/uploads/2019/07/starfield_minipanel.jpg"
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/uploads/2019/07/cool_building_minipanel.jpg",
+            "fromProtocol": true,
+            "totalBytes": 99465.0,
+            "isCrossOrigin": false,
+            "wastedBytes": 48819.0
+          },
+          {
+            "fromProtocol": true,
+            "url": "https://londonparkour.com/wp-content/uploads/2019/08/Andy_parrallettes_1000x527.png",
+            "isCrossOrigin": false,
+            "totalBytes": 101460.0,
+            "wastedBytes": 42354.0
+          },
+          {
+            "isCrossOrigin": false,
+            "totalBytes": 67210.0,
+            "wastedBytes": 11136.0,
+            "url": "https://londonparkour.com/wp-content/uploads/2019/09/feet_dangle_grad.jpg",
+            "fromProtocol": true
+          }
+        ],
+        "overallSavingsBytes": 186157.0,
+        "overallSavingsMs": 120.0,
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "thumbnail"
+          },
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL"
+          },
+          {
+            "label": "Size",
+            "key": "totalBytes",
+            "valueType": "bytes"
+          },
+          {
+            "label": "Potential Savings",
+            "key": "wastedBytes",
+            "valueType": "bytes"
+          }
+        ]
+      },
+      "numericValue": 120.0
+    },
+    "audio-caption": {
+      "id": "audio-caption",
+      "title": "`<audio>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+      "description": "Captions make audio elements usable for deaf or hearing-impaired users, providing critical information such as who is talking, what they're saying, and other non-speech information. [Learn more](https://web.dev/audio-caption/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "diagnostics": {
+      "id": "diagnostics",
+      "title": "Diagnostics",
+      "description": "Collection of useful page vitals.",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "numTasksOver10ms": 12.0,
+            "rtt": 0.002501658448691289,
+            "numFonts": 1.0,
+            "maxRtt": 0.002501658448691289,
+            "numTasksOver500ms": 0.0,
+            "numScripts": 31.0,
+            "maxServerLatency": null,
+            "numStylesheets": 10.0,
+            "numTasksOver100ms": 1.0,
+            "throughput": 32296006783.205925,
+            "numTasksOver25ms": 7.0,
+            "numTasksOver50ms": 3.0,
+            "numRequests": 65.0,
+            "totalTaskTime": 1057.169,
+            "mainDocumentTransferSize": 10566.0,
+            "totalByteWeight": 866764.0,
+            "numTasks": 841.0
+          }
+        ]
+      }
+    },
+    "focus-traps": {
+      "id": "focus-traps",
+      "title": "User focus is not accidentally trapped in a region",
+      "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn more](https://web.dev/focus-traps/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "managed-focus": {
+      "id": "managed-focus",
+      "title": "The user's focus is directed to new content added to the page",
+      "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn more](https://web.dev/managed-focus/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "visual-order-follows-dom": {
+      "id": "visual-order-follows-dom",
+      "title": "Visual order on the page follows DOM order",
+      "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more](https://web.dev/visual-order-follows-dom/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "errors-in-console": {
+      "id": "errors-in-console",
+      "title": "No browser errors logged to the console",
+      "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more](https://web.dev/errors-in-console)",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      },
+      "numericValue": 0.0
+    },
+    "aria-required-parent": {
+      "id": "aria-required-parent",
+      "title": "`[role]`s are contained by their required parent element",
+      "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-parent/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "image-alt": {
+      "id": "image-alt",
+      "title": "Image elements have `[alt]` attributes",
+      "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more](https://web.dev/image-alt/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-required-children": {
+      "id": "aria-required-children",
+      "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` have all required children.",
+      "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-children/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "redirects": {
+      "id": "redirects",
+      "title": "Avoid multiple page redirects",
+      "description": "Redirects introduce additional delays before the page can be loaded. [Learn more](https://web.dev/redirects).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "Potential savings of 230 ms",
+      "details": {
+        "type": "opportunity",
+        "items": [
+          {
+            "url": "(Initial: https://londonparkour.com/contact)",
+            "wastedMs": 0.0
+          },
+          {
+            "url": "https://londonparkour.com/contact/",
+            "wastedMs": 230.0
+          }
+        ],
+        "overallSavingsMs": 230.0,
+        "headings": [
+          {
+            "label": "URL",
+            "key": "url",
+            "valueType": "url"
+          },
+          {
+            "label": "Time Spent",
+            "key": "wastedMs",
+            "valueType": "timespanMs"
+          }
+        ]
+      },
+      "numericValue": 230.0
+    },
+    "html-lang-valid": {
+      "id": "html-lang-valid",
+      "title": "`<html>` element has a valid value for its `[lang]` attribute",
+      "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn more](https://web.dev/html-lang-valid/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "table"
+      }
+    },
+    "user-timings": {
+      "id": "user-timings",
+      "title": "User Timing marks and measures",
+      "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more](https://web.dev/user-timings).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "uses-passive-event-listeners": {
+      "id": "uses-passive-event-listeners",
+      "title": "Uses passive listeners to improve scrolling performance",
+      "description": "Consider marking your touch and wheel event listeners as `passive` to improve your page's scroll performance. [Learn more](https://web.dev/uses-passive-event-listeners).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "items": [
+          
+        ],
+        "headings": [
+          
+        ]
+      }
+    },
+    "time-to-first-byte": {
+      "id": "time-to-first-byte",
+      "title": "Server response times are low (TTFB)",
+      "description": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://web.dev/time-to-first-byte).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "displayValue": "Root document took 70 ms",
+      "details": {
+        "overallSavingsMs": -534.356,
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "opportunity"
+      },
+      "numericValue": 65.644
+    },
+    "uses-optimized-images": {
+      "id": "uses-optimized-images",
+      "title": "Efficiently encode images",
+      "description": "Optimized images load faster and consume less cellular data. [Learn more](https://web.dev/uses-optimized-images).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "Potential savings of 19 KB",
+      "warnings": [
+        
+      ],
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "thumbnail"
+          },
+          {
+            "label": "URL",
+            "key": "url",
+            "valueType": "url"
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "label": "Size"
+          },
+          {
+            "key": "wastedBytes",
+            "valueType": "bytes",
+            "label": "Potential Savings"
+          }
+        ],
+        "items": [
+          {
+            "url": "https://londonparkour.com/wp-content/uploads/2019/07/starfield_minipanel.jpg",
+            "fromProtocol": true,
+            "isCrossOrigin": false,
+            "totalBytes": 134320.0,
+            "wastedBytes": 19439.0
+          }
+        ],
+        "type": "opportunity",
+        "overallSavingsBytes": 19439.0
+      },
+      "numericValue": 0.0
+    },
+    "uses-text-compression": {
+      "id": "uses-text-compression",
+      "title": "Enable text compression",
+      "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more](https://web.dev/uses-text-compression).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          
+        ],
+        "type": "opportunity",
+        "items": [
+          
+        ],
+        "overallSavingsBytes": 0.0
+      },
+      "numericValue": 0.0
+    },
+    "appcache-manifest": {
+      "id": "appcache-manifest",
+      "title": "Avoids Application Cache",
+      "description": "Application Cache is deprecated. [Learn more](https://web.dev/appcache-manifest).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary"
+    },
+    "video-description": {
+      "id": "video-description",
+      "title": "`<video>` elements contain a `<track>` element with `[kind=\"description\"]`",
+      "description": "Audio descriptions provide relevant information for videos that dialogue cannot, such as facial expressions and scenes. [Learn more](https://web.dev/video-description/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "video-caption": {
+      "id": "video-caption",
+      "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+      "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more](https://web.dev/video-caption/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "aria-valid-attr-value": {
+      "id": "aria-valid-attr-value",
+      "title": "`[aria-*]` attributes have valid values",
+      "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more](https://web.dev/aria-valid-attr-value/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "table"
+      }
+    },
+    "aria-roles": {
+      "id": "aria-roles",
+      "title": "`[role]` values are valid",
+      "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more](https://web.dev/aria-roles/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "main-thread-tasks": {
+      "id": "main-thread-tasks",
+      "title": "Tasks",
+      "description": "Lists the toplevel main thread tasks that executed during page load.",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "headings": [
+          {
+            "key": "startTime",
+            "itemType": "ms",
+            "text": "Start Time",
+            "granularity": 1.0
+          },
+          {
+            "key": "duration",
+            "itemType": "ms",
+            "text": "End Time",
+            "granularity": 1.0
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "startTime": 179.134,
+            "duration": 8.718
+          },
+          {
+            "duration": 7.44,
+            "startTime": 191.077
+          },
+          {
+            "startTime": 981.288,
+            "duration": 57.693
+          },
+          {
+            "duration": 39.592,
+            "startTime": 1039.058
+          },
+          {
+            "duration": 93.324,
+            "startTime": 1079.086
+          },
+          {
+            "startTime": 1182.756,
+            "duration": 6.963
+          },
+          {
+            "duration": 25.88,
+            "startTime": 1190.81
+          },
+          {
+            "startTime": 1217.82,
+            "duration": 23.796
+          },
+          {
+            "startTime": 1242.164,
+            "duration": 14.41
+          },
+          {
+            "startTime": 1256.732,
+            "duration": 222.009
+          },
+          {
+            "startTime": 1479.177,
+            "duration": 11.93
+          },
+          {
+            "duration": 25.848,
+            "startTime": 1491.223
+          },
+          {
+            "startTime": 1517.097,
+            "duration": 5.707
+          },
+          {
+            "startTime": 1529.899,
+            "duration": 7.851
+          },
+          {
+            "duration": 5.281,
+            "startTime": 1537.791
+          },
+          {
+            "startTime": 1546.254,
+            "duration": 7.836
+          },
+          {
+            "startTime": 1554.864,
+            "duration": 6.955
+          },
+          {
+            "duration": 10.503,
+            "startTime": 1563.805
+          },
+          {
+            "duration": 27.578,
+            "startTime": 1574.622
+          },
+          {
+            "startTime": 1602.235,
+            "duration": 5.803
+          },
+          {
+            "startTime": 1609.156,
+            "duration": 6.286
+          },
+          {
+            "duration": 6.177,
+            "startTime": 1625.039
+          },
+          {
+            "duration": 6.237,
+            "startTime": 1641.693
+          },
+          {
+            "startTime": 1658.629,
+            "duration": 6.594
+          },
+          {
+            "duration": 6.16,
+            "startTime": 1674.99
+          },
+          {
+            "duration": 6.407,
+            "startTime": 1691.744
+          },
+          {
+            "duration": 6.403,
+            "startTime": 1708.414
+          },
+          {
+            "duration": 6.628,
+            "startTime": 1725.05
+          },
+          {
+            "duration": 22.567,
+            "startTime": 1741.771
+          },
+          {
+            "startTime": 1764.491,
+            "duration": 5.859
+          },
+          {
+            "duration": 6.284,
+            "startTime": 1779.895
+          },
+          {
+            "duration": 6.167,
+            "startTime": 1791.832
+          },
+          {
+            "duration": 6.669,
+            "startTime": 1808.406
+          },
+          {
+            "startTime": 1825.163,
+            "duration": 6.944
+          },
+          {
+            "duration": 6.809,
+            "startTime": 1841.779
+          },
+          {
+            "startTime": 1858.399,
+            "duration": 6.2
+          },
+          {
+            "duration": 6.283,
+            "startTime": 1875.037
+          },
+          {
+            "duration": 6.065,
+            "startTime": 1891.981
+          },
+          {
+            "duration": 5.577,
+            "startTime": 1908.351
+          },
+          {
+            "duration": 6.209,
+            "startTime": 1924.998
+          },
+          {
+            "startTime": 1941.729,
+            "duration": 5.658
+          },
+          {
+            "duration": 6.944,
+            "startTime": 1958.369
+          },
+          {
+            "startTime": 1991.738,
+            "duration": 5.76
+          },
+          {
+            "duration": 5.358,
+            "startTime": 2024.909
+          },
+          {
+            "duration": 5.533,
+            "startTime": 2058.367
+          },
+          {
+            "startTime": 2075.121,
+            "duration": 6.359
+          },
+          {
+            "duration": 6.058,
+            "startTime": 2091.673
+          },
+          {
+            "startTime": 2108.365,
+            "duration": 5.283
+          },
+          {
+            "startTime": 2125.091,
+            "duration": 5.383
+          },
+          {
+            "startTime": 2141.666,
+            "duration": 5.935
+          },
+          {
+            "duration": 6.156,
+            "startTime": 2158.345
+          },
+          {
+            "duration": 6.082,
+            "startTime": 2175.032
+          },
+          {
+            "duration": 6.485,
+            "startTime": 2191.671
+          },
+          {
+            "startTime": 2208.278,
+            "duration": 5.312
+          },
+          {
+            "startTime": 2258.328,
+            "duration": 5.464
+          },
+          {
+            "startTime": 2275.031,
+            "duration": 5.542
+          },
+          {
+            "startTime": 2291.76,
+            "duration": 5.63
+          },
+          {
+            "duration": 5.463,
+            "startTime": 2308.417
+          },
+          {
+            "startTime": 2325.058,
+            "duration": 5.815
+          },
+          {
+            "startTime": 2341.661,
+            "duration": 5.757
+          },
+          {
+            "startTime": 2358.432,
+            "duration": 5.922
+          },
+          {
+            "duration": 5.856,
+            "startTime": 2375.104
+          },
+          {
+            "duration": 5.778,
+            "startTime": 2391.771
+          },
+          {
+            "duration": 5.211,
+            "startTime": 2408.468
+          },
+          {
+            "duration": 5.324,
+            "startTime": 2441.817
+          },
+          {
+            "startTime": 2458.496,
+            "duration": 5.809
+          },
+          {
+            "duration": 5.233,
+            "startTime": 2474.964
+          },
+          {
+            "duration": 5.781,
+            "startTime": 2508.364
+          },
+          {
+            "startTime": 2528.55,
+            "duration": 5.679
+          },
+          {
+            "startTime": 2549.646,
+            "duration": 5.677
+          },
+          {
+            "startTime": 2575.039,
+            "duration": 5.826
+          },
+          {
+            "startTime": 2595.531,
+            "duration": 5.613
+          }
+        ]
+      },
+      "numericValue": 72.0
+    },
+    "plugins": {
+      "id": "plugins",
+      "title": "Document avoids plugins",
+      "description": "Search engines can't index plugin content, and many devices restrict plugins or don't support them. [Learn more](https://web.dev/plugins).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "total-blocking-time": {
+      "id": "total-blocking-time",
+      "title": "Total Blocking Time",
+      "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds.",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "30 ms",
+      "numericValue": 30.5
+    },
+    "input-image-alt": {
+      "id": "input-image-alt",
+      "title": "`<input type=\"image\">` elements have `[alt]` text",
+      "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn more](https://web.dev/input-image-alt/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "bootup-time": {
+      "id": "bootup-time",
+      "title": "JavaScript execution time",
+      "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/bootup-time).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "0.3 s",
+      "details": {
+        "summary": {
+          "wastedMs": 324.15499999999963
+        },
+        "headings": [
+          {
+            "key": "url",
+            "itemType": "url",
+            "text": "URL"
+          },
+          {
+            "itemType": "ms",
+            "key": "total",
+            "text": "Total CPU Time",
+            "granularity": 1.0
+          },
+          {
+            "text": "Script Evaluation",
+            "granularity": 1.0,
+            "itemType": "ms",
+            "key": "scripting"
+          },
+          {
+            "itemType": "ms",
+            "key": "scriptParseCompile",
+            "text": "Script Parse",
+            "granularity": 1.0
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "total": 551.822,
+            "scripting": 27.29899999999997,
+            "scriptParseCompile": 1.183,
+            "url": "Other"
+          },
+          {
+            "total": 167.7259999999997,
+            "scripting": 136.65399999999968,
+            "scriptParseCompile": 0.653,
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/page_specific/contact_fx.js"
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/js/anime.3.1.0.min.js",
+            "scripting": 156.315,
+            "total": 158.36599999999999,
+            "scriptParseCompile": 2.0509999999999997
+          }
+        ]
+      },
+      "numericValue": 324.15499999999963
+    },
+    "hreflang": {
+      "id": "hreflang",
+      "title": "Document has a valid `hreflang`",
+      "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more](https://web.dev/hreflang).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "items": [
+          
+        ],
+        "headings": [
+          
+        ]
+      }
+    },
+    "meta-refresh": {
+      "id": "meta-refresh",
+      "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+      "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more](https://web.dev/meta-refresh/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "no-document-write": {
+      "id": "no-document-write",
+      "title": "Avoids `document.write()`",
+      "description": "For users on slow connections, external scripts dynamically injected via `document.write()` can delay page load by tens of seconds. [Learn more](https://web.dev/no-document-write).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "speed-index": {
+      "id": "speed-index",
+      "title": "Speed Index",
+      "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://web.dev/speed-index).",
+      "score": 0.59,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "2.1 s",
+      "numericValue": 2084.809549480556
+    },
+    "document-title": {
+      "id": "document-title",
+      "title": "Document has a `<title>` element",
+      "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more](https://web.dev/document-title/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "items": [
+          
+        ],
+        "type": "table",
+        "headings": [
+          
+        ]
+      }
+    },
+    "first-cpu-idle": {
+      "id": "first-cpu-idle",
+      "title": "First CPU Idle",
+      "description": "First CPU Idle marks the first time at which the page's main thread is quiet enough to handle input.  [Learn more](https://web.dev/first-cpu-idle).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "1.2 s",
+      "numericValue": 1159.0
+    },
+    "total-byte-weight": {
+      "id": "total-byte-weight",
+      "title": "Avoids enormous network payloads",
+      "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://web.dev/total-byte-weight).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "Total size was 846 KB",
+      "details": {
+        "items": [
+          {
+            "url": "https://londonparkour.com/wp-content/cache/minify/f95dc.default.include.184868.css",
+            "totalBytes": 141343.0
+          },
+          {
+            "totalBytes": 134707.0,
+            "url": "https://londonparkour.com/wp-content/uploads/2019/07/starfield_minipanel.jpg"
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/uploads/2019/08/Andy_parrallettes_1000x527.png",
+            "totalBytes": 101846.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/uploads/2019/07/cool_building_minipanel.jpg",
+            "totalBytes": 99851.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/uploads/2019/09/feet_dangle_grad.jpg",
+            "totalBytes": 67596.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.woff2",
+            "totalBytes": 44731.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-includes/js/jquery/jquery.js",
+            "totalBytes": 34229.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-input.min.js",
+            "totalBytes": 32950.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.full.min.js",
+            "totalBytes": 21657.0
+          },
+          {
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-P5T257F",
+            "totalBytes": 20882.0
+          }
+        ],
+        "type": "table",
+        "headings": [
+          {
+            "key": "url",
+            "itemType": "url",
+            "text": "URL"
+          },
+          {
+            "text": "Size",
+            "key": "totalBytes",
+            "itemType": "bytes"
+          }
+        ]
+      },
+      "numericValue": 866764.0
+    },
+    "mainthread-work-breakdown": {
+      "id": "mainthread-work-breakdown",
+      "title": "Minimizes main-thread work",
+      "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/mainthread-work-breakdown)",
+      "score": 0.99,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "1.1 s",
+      "details": {
+        "headings": [
+          {
+            "key": "groupLabel",
+            "itemType": "text",
+            "text": "Category"
+          },
+          {
+            "itemType": "ms",
+            "key": "duration",
+            "text": "Time Spent",
+            "granularity": 1.0
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "groupLabel": "Script Evaluation",
+            "group": "scriptEvaluation",
+            "duration": 457.19999999999897
+          },
+          {
+            "groupLabel": "Style & Layout",
+            "group": "styleLayout",
+            "duration": 213.21699999999979
+          },
+          {
+            "group": "paintCompositeRender",
+            "duration": 140.1179999999999,
+            "groupLabel": "Rendering"
+          },
+          {
+            "groupLabel": "Other",
+            "group": "other",
+            "duration": 133.72900000000024
+          },
+          {
+            "group": "parseHTML",
+            "duration": 73.95000000000003,
+            "groupLabel": "Parse HTML & CSS"
+          },
+          {
+            "group": "scriptParseCompile",
+            "duration": 34.46600000000001,
+            "groupLabel": "Script Parsing & Compilation"
+          },
+          {
+            "group": "garbageCollection",
+            "duration": 4.489,
+            "groupLabel": "Garbage Collection"
+          }
+        ]
+      },
+      "numericValue": 1057.168999999999
+    },
+    "robots-txt": {
+      "id": "robots-txt",
+      "title": "robots.txt is valid",
+      "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more](https://web.dev/robots-txt).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "summary": {
+          
+        },
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "table"
+      }
+    },
+    "color-contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn more](https://web.dev/color-contrast/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "items": [
+          
+        ],
+        "headings": [
+          
+        ]
+      }
+    },
+    "first-contentful-paint": {
+      "id": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more](https://web.dev/first-contentful-paint).",
+      "score": 0.82,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "1.1 s",
+      "numericValue": 1095.0
+    },
+    "critical-request-chains": {
+      "id": "critical-request-chains",
+      "title": "Avoid chaining critical requests",
+      "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn more](https://web.dev/critical-request-chains).",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "displayValue": "13 chains found",
+      "details": {
+        "chains": {
+          "08219349419F79753DAD4A50BCF3729B": {
+            "children": {
+              "08219349419F79753DAD4A50BCF3729B:redirect": {
+                "children": {
+                  "1000000021.30": {
+                    "request": {
+                      "transferSize": 4999.0,
+                      "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/pro/assets/js/acf-pro-input.min.js",
+                      "responseReceivedTime": 1792267.394626,
+                      "endTime": 1792267.394629,
+                      "startTime": 1792267.277448
+                    }
+                  },
+                  "1000000021.29": {
+                    "request": {
+                      "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/js/acf-input.min.js",
+                      "responseReceivedTime": 1792267.4501999998,
+                      "endTime": 1792267.450204,
+                      "startTime": 1792267.277268,
+                      "transferSize": 32950.0
+                    }
+                  },
+                  "1000000021.14": {
+                    "request": {
+                      "startTime": 1792267.275896,
+                      "transferSize": 1300.0,
+                      "url": "https://londonparkour.com/wp-admin/css/color-picker.min.css",
+                      "responseReceivedTime": 1792267.407356,
+                      "endTime": 1792267.407358
+                    }
+                  },
+                  "1000000021.13": {
+                    "request": {
+                      "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.css",
+                      "responseReceivedTime": 1792267.394186,
+                      "endTime": 1792267.394189,
+                      "startTime": 1792267.275791,
+                      "transferSize": 1002.0
+                    }
+                  },
+                  "1000000021.4": {
+                    "request": {
+                      "transferSize": 34229.0,
+                      "url": "https://londonparkour.com/wp-includes/js/jquery/jquery.js",
+                      "responseReceivedTime": 1792267.440247,
+                      "endTime": 1792267.440253,
+                      "startTime": 1792267.273549
+                    }
+                  },
+                  "1000000021.9": {
+                    "request": {
+                      "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-input.css",
+                      "responseReceivedTime": 1792267.406867,
+                      "endTime": 1792267.406871,
+                      "startTime": 1792267.274945,
+                      "transferSize": 8518.0
+                    }
+                  },
+                  "1000000021.16": {
+                    "request": {
+                      "url": "https://londonparkour.com/wp-content/plugins/team-booking-extended/shortcodes/calendar_extended/css/style.css",
+                      "responseReceivedTime": 1792267.311549,
+                      "endTime": 1792267.311552,
+                      "startTime": 1792267.276132,
+                      "transferSize": 2554.0
+                    }
+                  },
+                  "1000000021.15": {
+                    "request": {
+                      "url": "https://londonparkour.com/wp-content/plugins/team-booking-extended/shortcodes/upcoming_extended/css/style.css",
+                      "responseReceivedTime": 1792267.38161,
+                      "endTime": 1792267.381614,
+                      "startTime": 1792267.276017,
+                      "transferSize": 6414.0
+                    }
+                  },
+                  "1000000021.10": {
+                    "request": {
+                      "endTime": 1792267.378143,
+                      "startTime": 1792267.275096,
+                      "transferSize": 3230.0,
+                      "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/pro/assets/css/acf-pro-input.css",
+                      "responseReceivedTime": 1792267.37814
+                    }
+                  },
+                  "1000000021.11": {
+                    "request": {
+                      "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min.css",
+                      "responseReceivedTime": 1792267.373199,
+                      "endTime": 1792267.373202,
+                      "startTime": 1792267.275476,
+                      "transferSize": 2422.0
+                    }
+                  },
+                  "1000000021.62": {
+                    "request": {
+                      "url": "https://londonparkour.com/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.woff2",
+                      "responseReceivedTime": 1792268.260581,
+                      "endTime": 1792268.260584,
+                      "startTime": 1792268.216698,
+                      "transferSize": 44731.0
+                    }
+                  },
+                  "1000000021.8": {
+                    "request": {
+                      "endTime": 1792267.411049,
+                      "startTime": 1792267.274788,
+                      "transferSize": 5032.0,
+                      "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-global.css",
+                      "responseReceivedTime": 1792267.411047
+                    }
+                  },
+                  "1000000021.12": {
+                    "request": {
+                      "endTime": 1792267.369913,
+                      "startTime": 1792267.275651,
+                      "transferSize": 4085.0,
+                      "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min.css",
+                      "responseReceivedTime": 1792267.369909
+                    }
+                  }
+                },
+                "request": {
+                  "url": "https://londonparkour.com/contact/",
+                  "responseReceivedTime": 1792267.257853,
+                  "endTime": 1792267.25786,
+                  "startTime": 1792267.193209,
+                  "transferSize": 10566.0
+                }
+              }
+            },
+            "request": {
+              "endTime": 1792267.192612,
+              "startTime": 1792267.123523,
+              "transferSize": 552.0,
+              "url": "https://londonparkour.com/contact",
+              "responseReceivedTime": 1792267.191993
+            }
+          }
+        },
+        "longestChain": {
+          "duration": 1137.061000103131,
+          "length": 3.0,
+          "transferSize": 44731.0
+        },
+        "type": "criticalrequestchain"
+      }
+    },
+    "interactive-element-affordance": {
+      "id": "interactive-element-affordance",
+      "title": "Interactive elements indicate their purpose and state",
+      "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn more](https://web.dev/interactive-element-affordance/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "bypass": {
+      "id": "bypass",
+      "title": "The page contains a heading, skip link, or landmark region",
+      "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more](https://web.dev/bypass/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "items": [
+          
+        ],
+        "headings": [
+          
+        ]
+      }
+    },
+    "dom-size": {
+      "id": "dom-size",
+      "title": "Avoids an excessive DOM size",
+      "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://web.dev/dom-size).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "334 elements",
+      "details": {
+        "items": [
+          {
+            "value": "334",
+            "statistic": "Total DOM Elements"
+          },
+          {
+            "value": "21",
+            "statistic": "Maximum DOM Depth",
+            "element": {
+              "value": "<input type=\"radio\" id=\"acf-field_5db3f2c70719d\" name=\"acf[field_5db3f2c70719d]\" value=\"Classes\" checked=\"checked\">",
+              "type": "code"
+            }
+          },
+          {
+            "value": "42",
+            "statistic": "Maximum Child Elements",
+            "element": {
+              "type": "code",
+              "value": "<body class=\"page-template-default page page-id-4374 page-parent londonparkour contact wpb-js-composer js-comp-ver-6.0.5 vc_responsive\">"
+            }
+          }
+        ],
+        "type": "table",
+        "headings": [
+          {
+            "key": "statistic",
+            "itemType": "text",
+            "text": "Statistic"
+          },
+          {
+            "key": "element",
+            "itemType": "code",
+            "text": "Element"
+          },
+          {
+            "text": "Value",
+            "key": "value",
+            "itemType": "numeric"
+          }
+        ]
+      },
+      "numericValue": 334.0
+    },
+    "tabindex": {
+      "id": "tabindex",
+      "title": "No element has a `[tabindex]` value greater than 0",
+      "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://web.dev/tabindex/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "unminified-javascript": {
+      "id": "unminified-javascript",
+      "title": "Minify JavaScript",
+      "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://web.dev/unminified-javascript).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "warnings": [
+        
+      ],
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          
+        ],
+        "type": "opportunity",
+        "items": [
+          
+        ],
+        "overallSavingsBytes": 0.0
+      },
+      "numericValue": 0.0
+    },
+    "valid-lang": {
+      "id": "valid-lang",
+      "title": "`[lang]` attributes have a valid value",
+      "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn more](https://web.dev/valid-lang/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "custom-controls-roles": {
+      "id": "custom-controls-roles",
+      "title": "Custom controls have ARIA roles",
+      "description": "Custom interactive controls have appropriate ARIA roles. [Learn more](https://web.dev/custom-control-roles/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "metrics": {
+      "id": "metrics",
+      "title": "Metrics",
+      "description": "Collects all available metrics.",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "items": [
+          {
+            "observedFirstPaint": 1191.0,
+            "observedLastVisualChange": 2551.0,
+            "firstContentfulPaint": 1095.0,
+            "observedFirstPaintTs": 1792268313320,
+            "speedIndex": 2085.0,
+            "observedSpeedIndexTs": 1792268808713,
+            "observedFirstContentfulPaint": 1191.0,
+            "observedNavigationStartTs": 1792267121866,
+            "observedFirstVisualChange": 1167.0,
+            "observedLoadTs": 1792268627258,
+            "firstMeaningfulPaint": 1095.0,
+            "observedTraceEnd": 2570.0,
+            "observedFirstMeaningfulPaint": 1191.0,
+            "observedTraceEndTs": 1792269691712,
+            "firstCPUIdle": 1159.0,
+            "observedFirstMeaningfulPaintTs": 1792268313320,
+            "observedDomContentLoaded": 1476.0,
+            "observedFirstVisualChangeTs": 1792268288866,
+            "observedNavigationStart": 0.0,
+            "interactive": 1925.0,
+            "observedFirstContentfulPaintTs": 1792268313320,
+            "observedLoad": 1505.0,
+            "observedLastVisualChangeTs": 1792269672866,
+            "observedDomContentLoadedTs": 1792268598268,
+            "observedSpeedIndex": 1687.0,
+            "estimatedInputLatency": 13.0,
+            "totalBlockingTime": 31.0
+          },
+          {
+            "lcpInvalidated": false
+          }
+        ],
+        "type": "debugdata"
+      },
+      "numericValue": 1925.0
+    },
+    "structured-data": {
+      "id": "structured-data",
+      "title": "Structured data is valid",
+      "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more](https://web.dev/structured-data).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "uses-long-cache-ttl": {
+      "id": "uses-long-cache-ttl",
+      "title": "Uses efficient cache policy on static assets",
+      "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl).",
+      "score": 0.97,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "1 resource found",
+      "details": {
+        "headings": [
+          {
+            "text": "URL",
+            "key": "url",
+            "itemType": "url"
+          },
+          {
+            "key": "cacheLifetimeMs",
+            "itemType": "ms",
+            "text": "Cache TTL",
+            "displayUnit": "duration"
+          },
+          {
+            "key": "totalBytes",
+            "itemType": "bytes",
+            "text": "Size",
+            "displayUnit": "kb",
+            "granularity": 1.0
+          }
+        ],
+        "items": [
+          {
+            "url": "https://www.google-analytics.com/analytics.js",
+            "wastedBytes": 13797.0,
+            "debugData": {
+              "max-age": 7200.0,
+              "type": "debugdata",
+              "public": true
+            },
+            "cacheLifetimeMs": 7200000.0,
+            "totalBytes": 18396.0,
+            "cacheHitProbability": 0.25
+          }
+        ],
+        "type": "table",
+        "summary": {
+          "wastedBytes": 13797.0
+        }
+      },
+      "numericValue": 13797.0
+    },
+    "max-potential-fid": {
+      "id": "max-potential-fid",
+      "title": "Max Potential First Input Delay",
+      "description": "The maximum potential First Input Delay that your users could experience is the duration, in milliseconds, of the longest task. [Learn more](https://developers.google.com/web/updates/2018/05/first-input-delay).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "60 ms",
+      "numericValue": 63.5
+    },
+    "interactive": {
+      "id": "interactive",
+      "title": "Time to Interactive",
+      "description": "Time to interactive is the amount of time it takes for the page to become fully interactive. [Learn more](https://web.dev/interactive).",
+      "score": 0.96,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "1.9 s",
+      "numericValue": 1925.0
+    },
+    "link-text": {
+      "id": "link-text",
+      "title": "Links do not have descriptive text",
+      "description": "Descriptive link text helps search engines understand your content. [Learn more](https://web.dev/link-text).",
+      "score": 0.0,
+      "scoreDisplayMode": "binary",
+      "displayValue": "1 link found",
+      "details": {
+        "headings": [
+          {
+            "key": "href",
+            "itemType": "url",
+            "text": "Link destination"
+          },
+          {
+            "text": "Link Text",
+            "key": "text",
+            "itemType": "text"
+          }
+        ],
+        "type": "table",
+        "items": [
+          {
+            "href": "https://londonparkour.com/support/",
+            "text": "Learn More"
+          }
+        ],
+        "summary": {
+          
+        }
+      }
+    },
+    "screenshot-thumbnails": {
+      "id": "screenshot-thumbnails",
+      "title": "Screenshot Thumbnails",
+      "description": "This is what the load of your site looked like.",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "details": {
+        "scale": 3000.0,
+        "items": [
+          {
+            "timing": 300.0,
+            "timestamp": 1792267421866,
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+          },
+          {
+            "timing": 600.0,
+            "timestamp": 1792267721866,
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+          },
+          {
+            "timing": 900.0,
+            "timestamp": 1792268021866,
+            "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+          },
+          {
+            "timing": 1200.0,
+            "timestamp": 1792268321866,
+            "data": "data:image/jpeg;base64,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"
+          },
+          {
+            "timing": 1500.0,
+            "timestamp": 1792268621866,
+            "data": "data:image/jpeg;base64,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"
+          },
+          {
+            "timing": 1800.0,
+            "timestamp": 1792268921866,
+            "data": "data:image/jpeg;base64,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"
+          },
+          {
+            "timing": 2100.0,
+            "timestamp": 1792269221866,
+            "data": "data:image/jpeg;base64,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"
+          },
+          {
+            "timestamp": 1792269521866,
+            "data": "data:image/jpeg;base64,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",
+            "timing": 2400.0
+          },
+          {
+            "timing": 2700.0,
+            "timestamp": 1792269821866,
+            "data": "data:image/jpeg;base64,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"
+          },
+          {
+            "timing": 3000.0,
+            "timestamp": 1792270121866,
+            "data": "data:image/jpeg;base64,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"
+          }
+        ],
+        "type": "filmstrip"
+      }
+    },
+    "network-rtt": {
+      "id": "network-rtt",
+      "title": "Network Round Trip Times",
+      "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more](https://hpbn.co/primer-on-latency-and-bandwidth/).",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "displayValue": "0 ms",
+      "details": {
+        "items": [
+          
+        ],
+        "type": "table",
+        "headings": [
+          
+        ]
+      },
+      "numericValue": 0.0
+    },
+    "notification-on-start": {
+      "id": "notification-on-start",
+      "title": "Avoids requesting the notification permission on page load",
+      "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more](https://web.dev/notification-on-start).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "dlitem": {
+      "id": "dlitem",
+      "title": "Definition list items are wrapped in `<dl>` elements",
+      "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn more](https://web.dev/dlitem/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "duplicate-id": {
+      "id": "duplicate-id",
+      "title": "`[id]` attributes on the page are unique",
+      "description": "The value of an id attribute must be unique to prevent other instances from being overlooked by assistive technologies. [Learn more](https://web.dev/duplicate-id/).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "unminified-css": {
+      "id": "unminified-css",
+      "title": "Minify CSS",
+      "description": "Minifying CSS files can reduce network payload sizes. [Learn more](https://web.dev/unminified-css).",
+      "score": 1.0,
+      "scoreDisplayMode": "numeric",
+      "details": {
+        "overallSavingsMs": 0.0,
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "opportunity",
+        "overallSavingsBytes": 0.0
+      },
+      "numericValue": 0.0
+    },
+    "tap-targets": {
+      "id": "tap-targets",
+      "title": "Tap targets are sized appropriately",
+      "description": "Interactive elements like buttons and links should be large enough (48x48px), and have enough space around them, to be easy enough to tap without overlapping onto other elements. [Learn more](https://web.dev/tap-targets).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "heading-levels": {
+      "id": "heading-levels",
+      "title": "Headings don't skip levels",
+      "description": "Headings are used to create an outline for the page and heading levels are not skipped. [Learn more](https://web.dev/heading-levels/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "unused-css-rules": {
+      "id": "unused-css-rules",
+      "title": "Remove unused CSS",
+      "description": "Remove dead rules from stylesheets and defer the loading of CSS not used for above-the-fold content to reduce unnecessary bytes consumed by network activity. [Learn more](https://web.dev/unused-css-rules).",
+      "score": 0.8,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "Potential savings of 133 KB",
+      "details": {
+        "overallSavingsMs": 240.0,
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL"
+          },
+          {
+            "label": "Size",
+            "key": "totalBytes",
+            "valueType": "bytes"
+          },
+          {
+            "key": "wastedBytes",
+            "valueType": "bytes",
+            "label": "Potential Savings"
+          }
+        ],
+        "type": "opportunity",
+        "items": [
+          {
+            "url": "https://londonparkour.com/wp-content/cache/minify/f95dc.default.include.184868.css",
+            "totalBytes": 141343.0,
+            "wastedBytes": 136614.0,
+            "wastedPercent": 96.65450015716111
+          }
+        ],
+        "overallSavingsBytes": 136614.0
+      },
+      "numericValue": 240.0
+    },
+    "use-landmarks": {
+      "id": "use-landmarks",
+      "title": "HTML5 landmark elements are used to improve navigation",
+      "description": "Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more](https://web.dev/use-landmarks/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "deprecations": {
+      "id": "deprecations",
+      "title": "Avoids deprecated APIs",
+      "description": "Deprecated APIs will eventually be removed from the browser. [Learn more](https://web.dev/deprecations).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "type": "table",
+        "items": [
+          
+        ]
+      }
+    },
+    "doctype": {
+      "id": "doctype",
+      "title": "Page has the HTML doctype",
+      "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more](https://web.dev/doctype).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary"
+    },
+    "geolocation-on-start": {
+      "id": "geolocation-on-start",
+      "title": "Avoids requesting the geolocation permission on page load",
+      "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more](https://web.dev/geolocation-on-start).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "table",
+        "items": [
+          
+        ],
+        "headings": [
+          
+        ]
+      }
+    },
+    "logical-tab-order": {
+      "id": "logical-tab-order",
+      "title": "The page has a logical tab order",
+      "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more](https://web.dev/logical-tab-order/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "layout-table": {
+      "id": "layout-table",
+      "title": "Presentational `<table>` elements avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
+      "description": "A table being used for layout purposes should not include data elements, such as the th or caption elements or the summary attribute, because this can create a confusing experience for screen reader users. [Learn more](https://web.dev/layout-table/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "is-on-https": {
+      "id": "is-on-https",
+      "title": "Uses HTTPS",
+      "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://web.dev/is-on-https).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "headings": [
+          
+        ],
+        "items": [
+          
+        ],
+        "type": "table"
+      }
+    },
+    "image-aspect-ratio": {
+      "id": "image-aspect-ratio",
+      "title": "Displays images with correct aspect ratio",
+      "description": "Image display dimensions should match natural aspect ratio. [Learn more](https://web.dev/image-aspect-ratio).",
+      "score": 1.0,
+      "scoreDisplayMode": "binary",
+      "warnings": [
+        
+      ],
+      "details": {
+        "type": "table",
+        "items": [
+          
+        ],
+        "headings": [
+          
+        ]
+      }
+    },
+    "custom-controls-labels": {
+      "id": "custom-controls-labels",
+      "title": "Custom controls have associated labels",
+      "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more](https://web.dev/custom-controls-labels/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "frame-title": {
+      "id": "frame-title",
+      "title": "`<frame>` or `<iframe>` elements have a title",
+      "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://web.dev/frame-title/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "render-blocking-resources": {
+      "id": "render-blocking-resources",
+      "title": "Eliminate render-blocking resources",
+      "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://web.dev/render-blocking-resources).",
+      "score": 0.53,
+      "scoreDisplayMode": "numeric",
+      "displayValue": "Potential savings of 700 ms",
+      "details": {
+        "items": [
+          {
+            "wastedMs": 230.0,
+            "url": "https://londonparkour.com/wp-includes/js/jquery/jquery.js",
+            "totalBytes": 34229.0
+          },
+          {
+            "wastedMs": 150.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-global.css",
+            "totalBytes": 5032.0
+          },
+          {
+            "wastedMs": 190.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/css/acf-input.css",
+            "totalBytes": 8518.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/pro/assets/css/acf-pro-input.css",
+            "totalBytes": 3230.0,
+            "wastedMs": 150.0
+          },
+          {
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min.css",
+            "totalBytes": 2422.0,
+            "wastedMs": 150.0
+          },
+          {
+            "wastedMs": 70.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min.css",
+            "totalBytes": 4085.0
+          },
+          {
+            "totalBytes": 1002.0,
+            "wastedMs": 70.0,
+            "url": "https://londonparkour.com/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.css"
+          },
+          {
+            "wastedMs": 70.0,
+            "url": "https://londonparkour.com/wp-admin/css/color-picker.min.css",
+            "totalBytes": 1300.0
+          },
+          {
+            "wastedMs": 70.0,
+            "url": "https://londonparkour.com/wp-content/plugins/team-booking-extended/shortcodes/upcoming_extended/css/style.css",
+            "totalBytes": 6414.0
+          },
+          {
+            "wastedMs": 70.0,
+            "url": "https://londonparkour.com/wp-content/plugins/team-booking-extended/shortcodes/calendar_extended/css/style.css",
+            "totalBytes": 2554.0
+          }
+        ],
+        "type": "opportunity",
+        "overallSavingsMs": 700.0,
+        "headings": [
+          {
+            "key": "url",
+            "valueType": "url",
+            "label": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "valueType": "bytes",
+            "label": "Size"
+          },
+          {
+            "valueType": "timespanMs",
+            "label": "Potential Savings",
+            "key": "wastedMs"
+          }
+        ]
+      },
+      "numericValue": 700.0
+    },
+    "aria-required-attr": {
+      "id": "aria-required-attr",
+      "title": "`[role]`s have all required `[aria-*]` attributes",
+      "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more](https://web.dev/aria-required-attr/).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable"
+    },
+    "offscreen-content-hidden": {
+      "id": "offscreen-content-hidden",
+      "title": "Offscreen content is hidden from assistive technology",
+      "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn more](https://web.dev/offscreen-content-hidden/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    }
+  },
+  "categories": {
+    "performance": {
+      "id": "performance",
+      "title": "Performance",
+      "score": 0.83,
+      "auditRefs": [
+        {
+          "id": "first-contentful-paint",
+          "weight": 3.0,
+          "group": "metrics"
+        },
+        {
+          "id": "first-meaningful-paint",
+          "weight": 1.0,
+          "group": "metrics"
+        },
+        {
+          "id": "speed-index",
+          "weight": 4.0,
+          "group": "metrics"
+        },
+        {
+          "id": "interactive",
+          "weight": 5.0,
+          "group": "metrics"
+        },
+        {
+          "id": "first-cpu-idle",
+          "weight": 2.0,
+          "group": "metrics"
+        },
+        {
+          "id": "max-potential-fid",
+          "weight": 0.0,
+          "group": "metrics"
+        },
+        {
+          "id": "estimated-input-latency",
+          "weight": 0.0
+        },
+        {
+          "id": "total-blocking-time",
+          "weight": 0.0
+        },
+        {
+          "id": "render-blocking-resources",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-responsive-images",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "offscreen-images",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unminified-css",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unused-css-rules",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-optimized-images",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-webp-images",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-text-compression",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-rel-preconnect",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "time-to-first-byte",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "redirects",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-rel-preload",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "efficient-animated-content",
+          "weight": 0.0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "total-byte-weight",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-long-cache-ttl",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "dom-size",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "critical-request-chains",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "user-timings",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "bootup-time",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "font-display",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "performance-budget",
+          "weight": 0.0,
+          "group": "budgets"
+        },
+        {
+          "id": "resource-summary",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "third-party-summary",
+          "weight": 0.0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "network-requests",
+          "weight": 0.0
+        },
+        {
+          "id": "network-rtt",
+          "weight": 0.0
+        },
+        {
+          "id": "network-server-latency",
+          "weight": 0.0
+        },
+        {
+          "id": "main-thread-tasks",
+          "weight": 0.0
+        },
+        {
+          "id": "diagnostics",
+          "weight": 0.0
+        },
+        {
+          "id": "metrics",
+          "weight": 0.0
+        },
+        {
+          "id": "screenshot-thumbnails",
+          "weight": 0.0
+        },
+        {
+          "id": "final-screenshot",
+          "weight": 0.0
+        }
+      ]
+    },
+    "accessibility": {
+      "id": "accessibility",
+      "title": "Accessibility",
+      "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
+      "score": 0.96,
+      "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+      "auditRefs": [
+        {
+          "id": "accesskeys",
+          "weight": 0.0,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "aria-allowed-attr",
+          "weight": 10.0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-attr",
+          "weight": 0.0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-children",
+          "weight": 0.0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-parent",
+          "weight": 0.0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-roles",
+          "weight": 0.0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "weight": 10.0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr",
+          "weight": 10.0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "audio-caption",
+          "weight": 0.0,
+          "group": "a11y-audio-video"
+        },
+        {
+          "id": "button-name",
+          "weight": 10.0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "bypass",
+          "weight": 3.0,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "color-contrast",
+          "weight": 3.0,
+          "group": "a11y-color-contrast"
+        },
+        {
+          "id": "definition-list",
+          "weight": 0.0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "dlitem",
+          "weight": 0.0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "document-title",
+          "weight": 3.0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "duplicate-id",
+          "weight": 1.0,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "frame-title",
+          "weight": 0.0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "html-has-lang",
+          "weight": 3.0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "html-lang-valid",
+          "weight": 3.0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "image-alt",
+          "weight": 0.0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "input-image-alt",
+          "weight": 0.0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "label",
+          "weight": 10.0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "layout-table",
+          "weight": 0.0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "link-name",
+          "weight": 3.0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "list",
+          "weight": 3.0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "listitem",
+          "weight": 3.0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "meta-refresh",
+          "weight": 0.0,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "meta-viewport",
+          "weight": 10.0,
+          "group": "a11y-best-practices"
+        },
+        {
+          "id": "object-alt",
+          "weight": 0.0,
+          "group": "a11y-names-labels"
+        },
+        {
+          "id": "tabindex",
+          "weight": 0.0,
+          "group": "a11y-navigation"
+        },
+        {
+          "id": "td-headers-attr",
+          "weight": 0.0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "th-has-data-cells",
+          "weight": 0.0,
+          "group": "a11y-tables-lists"
+        },
+        {
+          "id": "valid-lang",
+          "weight": 0.0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "video-caption",
+          "weight": 0.0,
+          "group": "a11y-audio-video"
+        },
+        {
+          "id": "video-description",
+          "weight": 0.0,
+          "group": "a11y-audio-video"
+        },
+        {
+          "id": "logical-tab-order",
+          "weight": 0.0
+        },
+        {
+          "id": "focusable-controls",
+          "weight": 0.0
+        },
+        {
+          "id": "interactive-element-affordance",
+          "weight": 0.0
+        },
+        {
+          "id": "managed-focus",
+          "weight": 0.0
+        },
+        {
+          "id": "focus-traps",
+          "weight": 0.0
+        },
+        {
+          "id": "custom-controls-labels",
+          "weight": 0.0
+        },
+        {
+          "id": "custom-controls-roles",
+          "weight": 0.0
+        },
+        {
+          "id": "visual-order-follows-dom",
+          "weight": 0.0
+        },
+        {
+          "id": "offscreen-content-hidden",
+          "weight": 0.0
+        },
+        {
+          "id": "heading-levels",
+          "weight": 0.0
+        },
+        {
+          "id": "use-landmarks",
+          "weight": 0.0
+        }
+      ]
+    },
+    "best-practices": {
+      "id": "best-practices",
+      "title": "Best Practices",
+      "score": 0.92,
+      "auditRefs": [
+        {
+          "id": "appcache-manifest",
+          "weight": 1.0
+        },
+        {
+          "id": "is-on-https",
+          "weight": 1.0
+        },
+        {
+          "id": "uses-passive-event-listeners",
+          "weight": 1.0
+        },
+        {
+          "id": "no-document-write",
+          "weight": 1.0
+        },
+        {
+          "id": "external-anchors-use-rel-noopener",
+          "weight": 1.0
+        },
+        {
+          "id": "geolocation-on-start",
+          "weight": 1.0
+        },
+        {
+          "id": "doctype",
+          "weight": 1.0
+        },
+        {
+          "id": "no-vulnerable-libraries",
+          "weight": 1.0
+        },
+        {
+          "id": "js-libraries",
+          "weight": 0.0
+        },
+        {
+          "id": "notification-on-start",
+          "weight": 1.0
+        },
+        {
+          "id": "deprecations",
+          "weight": 1.0
+        },
+        {
+          "id": "password-inputs-can-be-pasted-into",
+          "weight": 1.0
+        },
+        {
+          "id": "errors-in-console",
+          "weight": 1.0
+        },
+        {
+          "id": "image-aspect-ratio",
+          "weight": 1.0
+        }
+      ]
+    },
+    "seo": {
+      "id": "seo",
+      "title": "SEO",
+      "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+      "score": 0.9,
+      "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+      "auditRefs": [
+        {
+          "id": "viewport",
+          "weight": 1.0,
+          "group": "seo-mobile"
+        },
+        {
+          "id": "document-title",
+          "weight": 1.0,
+          "group": "seo-content"
+        },
+        {
+          "id": "meta-description",
+          "weight": 1.0,
+          "group": "seo-content"
+        },
+        {
+          "id": "http-status-code",
+          "weight": 1.0,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "link-text",
+          "weight": 1.0,
+          "group": "seo-content"
+        },
+        {
+          "id": "is-crawlable",
+          "weight": 1.0,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "robots-txt",
+          "weight": 1.0,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "image-alt",
+          "weight": 0.0,
+          "group": "seo-content"
+        },
+        {
+          "id": "hreflang",
+          "weight": 1.0,
+          "group": "seo-content"
+        },
+        {
+          "id": "canonical",
+          "weight": 1.0,
+          "group": "seo-content"
+        },
+        {
+          "id": "font-size",
+          "weight": 0.0,
+          "group": "seo-mobile"
+        },
+        {
+          "id": "plugins",
+          "weight": 1.0,
+          "group": "seo-content"
+        },
+        {
+          "id": "tap-targets",
+          "weight": 0.0,
+          "group": "seo-mobile"
+        },
+        {
+          "id": "structured-data",
+          "weight": 0.0
+        }
+      ]
+    }
+  },
+  "categoryGroups": {
+    "seo-mobile": {
+      "title": "Mobile Friendly",
+      "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "description": "More information about the performance of your application. These numbers don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+    },
+    "a11y-best-practices": {
+      "title": "Best practices",
+      "description": "These items highlight common accessibility best practices."
+    },
+    "a11y-color-contrast": {
+      "title": "Contrast",
+      "description": "These are opportunities to improve the legibility of your content."
+    },
+    "seo-crawl": {
+      "title": "Crawling and Indexing",
+      "description": "To appear in search results, crawlers need access to your app."
+    },
+    "pwa-optimized": {
+      "title": "PWA Optimized"
+    },
+    "seo-content": {
+      "title": "Content Best Practices",
+      "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+    },
+    "a11y-navigation": {
+      "title": "Navigation",
+      "description": "These are opportunities to improve keyboard navigation in your application."
+    },
+    "pwa-fast-reliable": {
+      "title": "Fast and reliable"
+    },
+    "a11y-aria": {
+      "title": "ARIA",
+      "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-audio-video": {
+      "title": "Audio and video",
+      "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+    },
+    "a11y-language": {
+      "title": "Internationalization and localization",
+      "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+    },
+    "a11y-tables-lists": {
+      "title": "Tables and lists",
+      "description": "These are opportunities to to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+    },
+    "a11y-names-labels": {
+      "title": "Names and labels",
+      "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "budgets": {
+      "title": "Budgets",
+      "description": "Performance budgets set standards for the performance of your site."
+    },
+    "metrics": {
+      "title": "Metrics"
+    },
+    "load-opportunities": {
+      "title": "Opportunities",
+      "description": "These suggestions can help your page load faster. They don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+    },
+    "pwa-installable": {
+      "title": "Installable"
+    }
+  },
+  "timing": {
+    "total": 10643.58
+  },
+  "i18n": {
+    "rendererFormattedStrings": {
+      "varianceDisclaimer": "Values are estimated and may vary. The performance score is [based only on these metrics](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted).",
+      "opportunityResourceColumnLabel": "Opportunity",
+      "opportunitySavingsColumnLabel": "Estimated Savings",
+      "errorMissingAuditInfo": "Report error: no audit information",
+      "errorLabel": "Error!",
+      "warningHeader": "Warnings: ",
+      "auditGroupExpandTooltip": "Show audits",
+      "passedAuditsGroupTitle": "Passed audits",
+      "notApplicableAuditsGroupTitle": "Not applicable",
+      "manualAuditsGroupTitle": "Additional items to manually check",
+      "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+      "crcLongestDurationLabel": "Maximum critical path latency:",
+      "crcInitialNavigation": "Initial Navigation",
+      "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+      "labDataTitle": "Lab Data"
+    }
+  },
+  "stackPacks": [
+    {
+      "id": "wordpress",
+      "title": "WordPress",
+      "iconDataURL": "data:image/svg+xml,%3Csvg viewBox='0 0 122.5 122.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232f3439'%3E%3Cpath d='M8.7 61.3c0 20.8 12.1 38.7 29.6 47.3l-25-68.7c-3 6.5-4.6 13.7-4.6 21.4zM96.7 58.6c0-6.5-2.3-11-4.3-14.5-2.7-4.3-5.2-8-5.2-12.3 0-4.8 3.7-9.3 8.9-9.3h.7a52.4 52.4 0 0 0-79.4 9.9h3.3c5.5 0 14-.6 14-.6 2.9-.2 3.2 4 .4 4.3 0 0-2.9.4-6 .5l19.1 57L59.7 59l-8.2-22.5c-2.8-.1-5.5-.5-5.5-.5-2.8-.1-2.5-4.5.3-4.3 0 0 8.7.7 13.9.7 5.5 0 14-.7 14-.7 2.8-.2 3.2 4 .3 4.3 0 0-2.8.4-6 .5l19 56.5 5.2-17.5c2.3-7.3 4-12.5 4-17z'/%3E%3Cpath d='M62.2 65.9l-15.8 45.8a52.6 52.6 0 0 0 32.3-.9l-.4-.7zM107.4 36a49.6 49.6 0 0 1-3.6 24.2l-16.1 46.5A52.5 52.5 0 0 0 107.4 36z'/%3E%3Cpath d='M61.3 0a61.3 61.3 0 1 0 .1 122.7A61.3 61.3 0 0 0 61.3 0zm0 119.7a58.5 58.5 0 1 1 .1-117 58.5 58.5 0 0 1-.1 117z'/%3E%3C/g%3E%3C/svg%3E",
+      "descriptions": {
+        "unminified-javascript": "A number of [WordPress plugins](https://wordpress.org/plugins/search/minify+javascript/) can speed up your site by concatenating, minifying, and compressing your scripts. You may also want to use a build process to do this minification up front if possible.",
+        "unminified-css": "A number of [WordPress plugins](https://wordpress.org/plugins/search/minify+css/) can speed up your site by concatenating, minifying, and compressing your styles. You may also want to use a build process to do this minification up-front if possible.",
+        "offscreen-images": "Install a [lazy-load WordPress plugin](https://wordpress.org/plugins/search/lazy+load/) that provides the ability to defer any offscreen images, or switch to a theme that provides that functionality. Also consider using [the AMP plugin](https://wordpress.org/plugins/amp/).",
+        "uses-responsive-images": "Upload images directly through the [media library](https://codex.wordpress.org/Media_Library_Screen) to ensure that the required image sizes are available, and then insert them from the media library or use the image widget to ensure the optimal image sizes are used (including those for the responsive breakpoints). Avoid using `Full Size` images unless the dimensions are adequate for their usage. [Learn More](https://codex.wordpress.org/Inserting_Images_into_Posts_and_Pages#Image_Size).",
+        "efficient-animated-content": "Consider uploading your GIF to a service which will make it available to embed as an HTML5 video.",
+        "unused-css-rules": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused CSS in your page. To identify plugins that are adding extraneous CSS, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the stylesheet. Look out for plugins that have many stylesheets in the list which have a lot of red in code coverage. A plugin should only enqueue a stylesheet if it is actually used on the page.",
+        "time-to-first-byte": "Themes, plugins, and server specifications all contribute to server response time. Consider finding a more optimized theme, carefully selecting an optimization plugin, and/or upgrading your server.",
+        "render-blocking-resources": "There are a number of WordPress plugins that can help you [inline critical assets](https://wordpress.org/plugins/search/critical+css/) or [defer less important resources](https://wordpress.org/plugins/search/defer+css+javascript/). Beware that optimizations provided by these plugins may break features of your theme or plugins, so you will likely need to make code changes.",
+        "total-byte-weight": "Consider showing excerpts in your post lists (e.g. via the more tag), reducing the number of posts shown on a given page, breaking your long posts into multiple pages, or using a plugin to lazy-load comments.",
+        "uses-text-compression": "You can enable text compression in your web server configuration.",
+        "uses-optimized-images": "Consider using an [image optimization WordPress plugin](https://wordpress.org/plugins/search/optimize+images/) that compresses your images while retaining quality.",
+        "uses-webp-images": "Consider using a [plugin](https://wordpress.org/plugins/search/convert+webp/) or service that will automatically convert your uploaded images to the optimal formats.",
+        "uses-long-cache-ttl": "Read about [Browser Caching in WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching).",
+        "unused-javascript": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused JavaScript in your page. To identify plugins that are adding extraneous JS, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the script. Look out for plugins that have many scripts in the list which have a lot of red in code coverage. A plugin should only enqueue a script if it is actually used on the page."
+      }
+    }
+  ]
+}
