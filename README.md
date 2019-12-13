@@ -2,7 +2,8 @@
 
 ## The problem
 
-When using the the Pagespeed Insights API you will receive back a JSON file with all of your results. 
+When using the the [Pagespeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started) you will receive back a 
+[JSON response](https://developers.google.com/speed/docs/insights/v5/reference/pagespeedapi/runpagespeed#response_1) with all of your results. 
 This is great for parsing and using for various other things, but lacks the ability to render as an
 HTML file without coding it yourself. 
 
